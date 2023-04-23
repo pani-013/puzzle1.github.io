@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../css starter/starter.css">
+    <link rel="stylesheet" href="puzzle1.css">
+</head>
+
+<body>
+    <div id="first">
+        <h1>Hello👋 Seeker! 🔎</h1>
+        <p style="font-size: 25px;"><b> Welcome to my puzzle🧩 game 🤗 Lets get Started!!</b>
+            <br>
+            <span style="color: gold;text-shadow: 0 0 4px rgb(255 215 0);"><b>Follow these rules!</b></span>
+        <ol>
+            <li>You have to solve <b>3</b> mysteries</li>
+            <li>You have <b> 7 minutes</b> to solve each mystery</li>
+            <li>You will hit a dead end if the timer reaches <b>0</b></li>
+            <li>If you reload or reach a dead end, progress <b>will reset</b> </li>
+            <li>Each mystery has a <b>clue</b> which you <b>must explore!</b> </li>
+            <li>The <b>clue </b> might be a <b>puzzle itself</b> </li>
+            <li>You might have to <b> follow the trail</b> of clues</li>
+            <li>There is a <b>critical Mystery</b> which <b> must be solved</b> to move forward</li>
+            <li>Don't Forget To Enjoy</li>
+        </ol>
+        </p>
+        <button id="start" onclick="start()"><b>Start</b> <span id="startEmoji">➤</span></button>
+    </div>
+    <div class="solveBox" id="solveboxid">
+        <div class="heading">
+            <h1 id="mystery">Mystery 1</h1>
+            <p id="displayScore">Score: 0</p>
+            <p>Time left: <span id="timer"></span></p>
+        </div>
+        <p id="question">Seeker, to open the box behind that has a 🗝️ you must Enter the code to open it!
+        </p>
+        <input type="text" id="answer" placeholder="Write Your Answer Here" required>
+
+        <div class="clueBox">
+            <a href="clue1.html" id="clue" onclick="linkChange()" target="_blank">CLUES! ✨</a>
+            <button class="next" onclick="end()">Next</button>
+        </div>
+    </div>
+
+    <div id="end">
+        <h1>Congratulations Seeker!! <br> You have faced all the challenging puzzles!! Your Score is: </h1>
+        <p id="showScore" style="font-size: 20px;">13</p>
+        <button onclick="restart()">Restart</button>
+    </div>
+
+    <script src="puzzle1.js"></script>
+</body>
+
+</html>

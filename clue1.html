@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clue for Puzzle 1</title>
+    <link rel="stylesheet" href="../../css starter/starter.css">
+    <style>
+        * {
+            font-weight: bold;
+        }
+
+        body {
+            height: 100vh;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url('clues1.png');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+        }
+
+        h1 {
+            text-align: center;
+            color: gold;
+            font-size: 40px;
+            margin: 0.5rem;
+        }
+
+        .instruction {
+            font-size: 20px;
+            /* border: 2px solid blue; */
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .infinite {
+            font-size: 40px;
+        }
+
+        #clue1,
+        #clue2,
+        #clue3 {
+            display: none;
+            margin: 0.5rem;
+        }
+
+        .Box {
+            /* border: 2px solid red; */
+            align-items: center;
+            height: fit-content;
+            width: fit-content;
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+            background-color: rgba(0, 0, 0, 0.4);
+            padding: 2rem;
+            transition: 0.2s ease-in-out;
+        }
+
+        .clueBox {
+            /* border: 2px solid lime; */
+            height: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            flex-direction: column;
+        }
+
+        button {
+            width: 70%;
+            font-size: 20px;
+            color: white;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+            transition: 0.3s ease-in-out;
+            font-weight: bolder;
+            padding: 0.5rem;
+        }
+
+        button:hover {
+            color: lime;
+            padding: 1rem;
+            background-color: black;
+            margin: 0.5rem;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            font-weight: bolder;
+            transition: 0.3s ease-in-out;
+            padding: 0.5rem;
+            border-radius: 5px;
+        }
+
+        a:hover {
+            color: gold;
+            text-shadow: 0 0 4px rgb(255 215 0);
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+
+        p {
+            font-size: 20px;
+        }
+
+        #clue2 {
+            transition: 0.3s ease-in-out;
+        }
+
+        #clue2:hover {
+            padding: 0.5rem;
+            border-radius: 5px;
+            background-color: rgba(0, 0, 0, 0.4);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="Box">
+        <h1>Hello Seeker!</h1>
+        <p class="instruction">To find the code, you have two clues</p>
+        <section class="clueBox">
+            <button onclick="revealFunction('clue1')">Reveal Clue 1 💫</button>
+            <a href="https://www.instagram.com/p/CrLiH9ZpKZJrxkMTVz0GUrEQQbcR17HWF0miI00/" id="clue1"
+                target="_blank">Change
+                dimension!</a>
+            <button onclick="revealFunction('clue2')">Reveal Clue 2 💫</button>
+            <p id="clue2">First 6 terms of the <b><a href="https://en.wikipedia.org/wiki/Fibonacci_sequence"
+                        target="_blank">fibonacci</a></b> series except 0</p>
+        </section>
+    </div>
+
+
+    <script>
+        function revealFunction(currElement) {
+            console.log("clicked")
+            document.getElementById(currElement).style.display = "block";
+        }
+    </script>
+</body>
+
+</html>

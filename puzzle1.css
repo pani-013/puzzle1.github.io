@@ -1,0 +1,141 @@
+:root {
+    --backgroundColor: rgba(0, 0, 0, 0.4);
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('elderscroll.jpeg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#first {
+    border-radius: 10px;
+    color: white;
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    background-color: var(--backgroundColor);
+    padding: 0.5rem;
+    backdrop-filter: blur(5px);
+}
+
+#solveboxid {
+    display: none;
+}
+
+
+.solveBox {
+    border-radius: 10px;
+    width: 70%;
+    height: 60%;
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    background-color: var(--backgroundColor);
+    color: white;
+    /* display: flex; */
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+.heading {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+#end {
+    display: none;
+    color: white;
+    /* border: 2px solid red; */
+    min-width: 50%;
+    background-color: var(--backgroundColor);
+    padding: 1rem;
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+p {
+    font-size: 20px;
+}
+
+input {
+    font-size: 17px;
+    padding: 1rem;
+}
+
+ol {
+    text-align: left;
+    margin: 0.5rem;
+}
+
+.clueBox {
+    /* border: 2px solid red; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clue {
+    text-decoration: none;
+    color: gold;
+    border: 2px solid rgba(0, 0, 0, 0);
+    font-size: 27px;
+    width: fit-content;
+    padding: 0.5rem;
+    transition: 0.3s ease-in-out;
+    border-radius: 10px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.clue:hover {
+    /* border: 2px solid rgba(0, 0, 0, 0); */
+    /* background-color: gold; */
+    color: lime;
+    background-color: black;
+}
+
+button {
+    padding: 0.5rem;
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: black;
+    color: lime;
+
+}
+
+button:hover>#startEmoji {
+    display: inline;
+}
+
+b {
+    color: gold;
+}
+
+#critical {
+    font-weight: 1000;
+    color: red;
+}
